@@ -26,6 +26,12 @@
     padding-top: 50px;
   }
 
-  .nav-item:hover {
-    color: gold;
-  }
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+footer{
+  position: relative;
+  top: 2vw;
+}
