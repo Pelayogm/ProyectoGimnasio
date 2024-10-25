@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<!---data-bs-theme="dark"-->
+<html lang="es">
+<head>
+  <title>Gimnasios Fit Sport</title>
+  <meta name="description" content="Gimnasio Pelayogm">
+  <meta name="author" content="Pelayogm">    
+  <link rel="shortcut icon" href="src/foto_cyndaquil.ico"> 
+
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <style type="text/css">
+
+    .tituloGimnasio {
+      border-left: 1px solid white ;
+    }
+
+    .menuOpciones {
+      justify-content: right;
+      margin-right: 100px;
+      padding: 10px;
+    }
+
+    .navbar-expand-sm .navbar-nav .dropdown-menu {
+      justify-content: right;
+    }
+
+    .card {
+      margin-bottom: 100px;
+      height:90%;
+      text-align: center;
+    }
+    body {
+      background-color: #020033;
+    }
+    
+
+
+  </style>
+
+</head>
+  <body>
+          <!--INICIO DEL SECCION NAV-->
+    <nav class="navbar navbar-expand-sm bg-black navbar-dark">
+      <div class="container-fluid">
+          <img src="src/Toro_fondo_Negro.png" alt="LogoToro" style="border-radius: 15%; " width="200px" height="194px">
+      <div class="container-fluid text-light text-center">
+        <h1 style="color: white; justify-content: center;" class="tituloGimnasio">Gimnasio Proyecto DESIN</h1>
+      </div>
+
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+          </button>
+          
+          <div class="collapse navbar-collapse menuOpciones">
+
+            <ul class="navbar-nav">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Actividades</a>
+                  <ul class="dropdown-menu">
+                      <li class="nav-item dropdown"><a class="dropdown-item" href="#" role="button" data-bs-toggle="dropdown">Maquinas</a></li>
+                      <li class="nav-item dropdown"><a class="dropdown-item" href="#" role="button" data-bs-toggle="dropdown">Cursos</a></li>
+                      <li class="nav-item dropdown"><a class="dropdown-item" href="#" role="button" data-bs-toggle="dropdown">Instalaciones</a></li>	
+                  </ul>
+              </li>
+              <li class="nav-item"><a class="nav-link" href="secretaria.js">Contacto</a></li>
+              <li class="nav-item"><a class="nav-link" href="novedades.js">Galería</a></li>	
+              <li class="nav-item"><a class="nav-link" href="novedades.js">Clientes</a></li>	
+            </ul>
+          </div>
+        </div>  
+    </nav>
+          <!--INICIO DEL SECCION NAV-->
+        <!--INICIO DE LAS CARDS DE LOS CURSOS PRINCIPALES-->
+        <div class="container mt-5">
+          <div class="row">
+        
+            <div class="col-lg-3 col-md-6 col-12">
+              <div class="card">
+                <div class="card-header">
+                    <h2 class="card-title">Individual</h2>
+                </div>    
+                <div class="card-body" style="font-size: 200%; background-color: #27268d; color:#ffffff">
+                  
+                  <p>Mensualidad 1 persona</p> 
+                  <p>Acceso completo sala maquinas</p>
+                  <br>
+                  <br>
+                  <p>30€/mes</p>
+                  <br>
+                  <p>330€/año</p>
+                  </div>
+              </div>
+            </div>
+        
+            <div class="col-lg-3 col-md-6 col-12">
+              <div class="card">
+                <div class="card-header">
+                    <h2 class="card-title">Dúo</h2>
+                </div>    
+                <div class="card-body" style="font-size: 200%; background-color: #27268d; color:#ffffff">
+                  
+                  <p>Mensualidad 2 personas</p>
+                  <p>Acceso completo sala maquinas</p>
+                  <br>
+                  <br>
+                  <p>50/mes</p>
+                  <br>
+                  <p>550/año</p>
+                  </div>
+              </div>
+            </div>
+        
+            <div class="col-lg-3 col-md-6 col-12">
+              <div class="card">
+                <div class="card-header">
+                    <h2 class="card-title">Familiar</h2>
+                </div>    
+                <div class="card-body" style="font-size: 200%; background-color: #27268d; color:#ffffff">
+                  
+                  <p>Mensualidad 3-5 personas</p>
+                  <p>Acceso completo sala maquinas</p>
+                  <br>
+                  <br>
+                  <p>90/mes</p>
+                  <br>
+                  <p>990/año</p>
+                  </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-12">
+              <div class="card">
+                <div class="card-header">
+                    <h2 class="card-title">Piscina</h2>
+                </div>    
+                <div class="card-body" style="font-size: 200%; background-color: #27268d; color:#ffffff">
+                  
+                  <p>Acceso a piscina: </p>
+                  <br>
+                  <p>+ 10€/persona</p>
+
+                </div>
+                <div class="card-header">
+                  <h2 class="card-title">Padel</h2>
+                </div>
+                <div class="card-body" style="font-size: 200%; background-color: #27268d; color:#ffffff" >
+                  
+                  <p>Acceso a pistas de pádel: </p>
+                  <br>
+                  <p>+ 10€/persona</p>
+                </div>
+          </div>
+  </body>
+</html>
