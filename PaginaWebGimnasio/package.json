@@ -9,12 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-<<<<<<< HEAD
-    "bootstrap": "^5.3.3",
-    "paginawebgimnasio": "file:"
-=======
     "bootstrap": "^5.3.3"
->>>>>>> feature/login-diego
   },
   "description": ""
 }
