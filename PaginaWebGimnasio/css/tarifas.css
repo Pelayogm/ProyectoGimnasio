@@ -1,0 +1,26 @@
+
+.tituloGimnasio {
+    border-left: 1px solid white ;
+  }
+
+  .menuOpciones {
+    justify-content: right;
+    margin-right: 100px;
+    padding: 10px;
+  }
+
+  .navbar-expand-sm .navbar-nav .dropdown-menu {
+    justify-content: right;
+  }
+
+  .card {
+    margin-bottom: 100px;
+    height:90%;
+    text-align: center;
+  }
+  body {
+    background-color: #020033;
+  }
+  
+
+  
