@@ -39,3 +39,8 @@ footer{
 .navScrollSpy {
   position: fixed;
 }
+
+.imagenes-ScrollSection {
+  width: 550px;
+  height: 440px;
+}
