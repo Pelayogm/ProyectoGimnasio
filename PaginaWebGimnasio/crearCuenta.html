@@ -5,33 +5,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registro Gimnasio</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-   
-   
-  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
-  <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-  <style type="text/css"></style>
-   <style>
-
-      
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
         #intro {
-            background-image: url(https://imagenes.heraldo.es/files/image_1920_1080/uploads/imagenes/2024/02/02/piscina-cubierta-gsc1.jpeg);
             height: 100vh;
             display: flex;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        video {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            z-index: -1;
+            transform: translate(-50%, -50%);
         }
         
         .form-container {
             flex: 1;
             display: flex;
-            justify-content: center; /* Centra horizontalmente */
-            align-items: center; /* Centra verticalmente */
-            padding: 5rem; 
+            justify-content: center;
+            align-items: center;
+            padding: 30rem; 
+            z-index: 1; 
         }
+        
         @media (min-width: 992px) {
             #intro {
                 margin-top: -58.59px;
             }
         }
+
         .underline {
             height: 3px;
             width: 100%;
@@ -39,44 +50,46 @@
             margin: 10px 0;
             margin-bottom: 20px;
         }
+
         h2 {
             font-family: 'Arial', sans-serif;
             color: rgb(255, 255, 255);
         }
+
         footer {
             background-color: black;
             color: white;
             text-align: center;
             padding: 30px 0; 
         }
+
         .footer-logo {
             max-width: 100px; 
             margin: 0 auto; 
         }
 
         .tituloGimnasio {
-      border-left: 1px solid white ;
-    }
+            border-left: 1px solid white;
+        }
 
-    .menuOpciones {
-      justify-content: right;
-      margin-right: 100px;
-      padding: 10px;
-    }
+        .menuOpciones {
+            justify-content: right;
+            margin-right: 100px;
+            padding: 10px;
+        }
 
-    .navbar-expand-sm .navbar-nav .dropdown-menu {
-      justify-content: right;
-    }
+        .navbar-expand-sm .navbar-nav .dropdown-menu {
+            justify-content: right;
+        }
 
-    .curso_titulo {
-      border-bottom: 1px solid black;
-      padding-bottom: 10px;
-    }
+        .curso_titulo {
+            border-bottom: 1px solid black;
+            padding-bottom: 10px;
+        }
 
-    .card {
-      border: 5px solid var(--bs-card-border-color);
-    }
- 
+        .card {
+            border: 5px solid var(--bs-card-border-color);
+        }
     </style>
 </head>
 <body>
@@ -92,7 +105,6 @@
         </button>
         
         <div class="collapse navbar-collapse menuOpciones">
-
           <ul class="navbar-nav">
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Actividades</a>
@@ -111,11 +123,13 @@
   </nav>
   
     <div id="intro">
-        <div class="left-image"></div>
+        <video autoplay muted loop>
+            <source src="src/videoPiscina.mp4" type="video/mp4">
+
+            Tu navegador no soporta el video.
+        </video>
         <div class="form-container">
             <div>
-                
-                
                 <form class="bg-black rounded shadow-5-strong p-5" style="color: white;">
                   <h2 class="text-center">CREAR NUEVA CUENTA</h2>
                   <div class="underline"></div>
@@ -139,9 +153,9 @@
                         <input type="password" id="password" class="form-control" required />
                     </div>
                     <!-- Botón de registrar -->
-                    <div style="display: flex; justify-content: center; margin-top: 50px;" >
-                      <a href="PaginaWebGimnasio/index.html" class="btn btn-primary btn-block">Registrarme</a>
-                  </div>
+                    <div style="display: flex; justify-content: center; margin-top: 50px;">
+                        <button onclick="window.location.href='PaginaWebGimnasio/index.html'" class="btn btn-primary btn-block">Registrarme</button>
+                    </div>
                 </form>
             </div>
         </div>
